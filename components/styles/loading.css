@@ -1,0 +1,35 @@
+.skeleton {
+  background-color: #f6f7f8;
+  margin: 10px 0;
+}
+
+.skeleton__header,
+.skeleton__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.skeleton__row {
+  display: flex;
+}
+
+.skeleton__cell {
+  background: linear-gradient(90deg, #f0f0f0 25%, #f8f8f8 50%, #f0f0f0 75%);
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.2s ease-in-out infinite;
+  border-radius: 4px;
+  flex: 1;
+  height: 20px;
+  margin: 5px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
