@@ -81,13 +81,11 @@ const MainTable = () => {
         accessorKey: "ResourceLocation",
       },
       { header: "Consumed Quantity", accessorKey: "ConsumedQuantity" },
-      {
-        header: "Date",
-        columns: [
+      
           { accessorKey: "Date.from", header: "From" },
           { accessorKey: "Date.to", header: "to" },
-        ],
-      },
+        
+      
     ],
     []
   );
@@ -164,7 +162,7 @@ const MainTable = () => {
             </div>
 
             <div
-              style={{ display: "flex", gap: "25px", justifyContent: "center", marginTop:'20px' }}
+             className="bottom__buttons"
             >
               <div>
                 <button
@@ -203,7 +201,7 @@ const MainTable = () => {
                   {table.getPageCount()}
                 </strong>
               </span>
-              <span className="flex items-center gap-1" >
+              <span className="gotoPage" >
                 | Go to page:
                 <input
                   type="number"

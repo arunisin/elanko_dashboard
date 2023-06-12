@@ -18,8 +18,8 @@ input {
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
-background: #ebebeb;
-text-align: center;
+  background: #ebebeb;
+  text-align: center;
   &::placeholder {
     color: transparent;
   }
@@ -76,6 +76,7 @@ input{
   text-align: left;
   border-bottom: 1px solid #ccc;
   text-align: center;
+  border: 1px solid gray;
 }
 
 .table th {
@@ -86,24 +87,39 @@ input{
   background-color: #f9f9f9;
 }
 
-/* Hover Effect */
+
 .table tr:hover {
   background-color: #eaf6ff;
-  /* cursor: pointer; */
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .table-container {
     overflow-x: auto;
   }
 
-  .table {
-    min-width: 500px;
-  }
 
-  .table th,
-  .table td {
-    white-space: nowrap;
+  .bottom__buttons {
+    flex-direction: column;
+align-items: center;
+    justify-content: center;
   }
+}
+
+.bottom__buttons {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+
+
+.gotoPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
