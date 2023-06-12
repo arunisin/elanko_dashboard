@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import {
   SpecificApplicationDataFetch,
   Params,
-} from "@app/api/applications/[application]/route";
+} from "@app/api/applications/SpecificApplication";
 import { RawDataProps } from "@components/types/Types";
 
 import {
