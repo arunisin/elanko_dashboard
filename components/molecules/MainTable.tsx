@@ -106,7 +106,7 @@ const MainTable = () => {
         isMainTable ? (
           <>
             <h2 style={{ textAlign: "center" }}>
-              The data is shown cumulatievly
+              The data is shown cumulatively
             </h2>
             <div
               className="table-container"
