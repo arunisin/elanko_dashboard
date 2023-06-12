@@ -164,7 +164,7 @@ const MainTable = () => {
             </div>
 
             <div
-              style={{ display: "flex", gap: "25px", justifyContent: "center" }}
+              style={{ display: "flex", gap: "25px", justifyContent: "center", marginTop:'20px' }}
             >
               <div>
                 <button
@@ -203,7 +203,7 @@ const MainTable = () => {
                   {table.getPageCount()}
                 </strong>
               </span>
-              <span className="flex items-center gap-1">
+              <span className="flex items-center gap-1" >
                 | Go to page:
                 <input
                   type="number"
@@ -233,8 +233,10 @@ const MainTable = () => {
           </>
         ) : (
           <>
-            <button onClick={() => setIsmainTable(true)}>goBack</button>
-            <SpecificApplicationData application={selectedRowData} />
+          <div style={{display:'flex', justifyContent:'flex-start', padding:'20px '}}>
+            <button style={{padding:'10px 20px', borderRadius:'2px', cursor:'pointer'}} onClick={() => setIsmainTable(true)}>goBack</button>
+          </div>  
+          <SpecificApplicationData application={selectedRowData} />
           </>
         )
       ) : (

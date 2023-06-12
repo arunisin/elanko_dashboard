@@ -76,6 +76,7 @@ const SpecificApplicationData: React.FC<ApplicationrequestProps> = ({
           <h2 style={{ textAlign: "center", marginTop: "40px" }}>
             Data for {application}
           </h2>
+         
           <div className="table-container">
             <table className=" table text-center">
               <thead>
@@ -113,7 +114,8 @@ const SpecificApplicationData: React.FC<ApplicationrequestProps> = ({
               </tbody>
             </table>
 
-            <div
+            
+          </div><div
               style={{ display: "flex", gap: "25px", justifyContent: "center" }}
             >
               <div>
@@ -180,7 +182,6 @@ const SpecificApplicationData: React.FC<ApplicationrequestProps> = ({
                 ))}
               </select>
             </div>
-          </div>
         </>
       ) : (
         <Loading />

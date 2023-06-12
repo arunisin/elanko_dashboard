@@ -38,7 +38,7 @@ const Filter = ({
           ])
         }
         placeholder={`Max`}
-        className="w-24 border shadow rounded"
+        className="form__field"
       />
     </div>
   ) : (
