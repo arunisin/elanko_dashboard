@@ -1,27 +1,22 @@
 import React, { Fragment, useEffect, useMemo, useState } from "react";
-import { COLUMNS } from "@components/atoms/columns";
 import {
   useReactTable,
   getCoreRowModel,
   getFilteredRowModel,
   getPaginationRowModel,
   ColumnDef,
-  OnChangeFn,
   flexRender,
-  ExpandedState,
-  getExpandedRowModel,
-  Row,
+ 
 } from "@tanstack/react-table";
 import { fetchDataAndConvert } from "@app/api/Raw";
-import { ConvertedDataProps, RawDataProps } from "@components/types/Types";
-import { SpecificApplicationDataFetch } from "@app/api/applications/[application]/route";
+import { ConvertedDataProps } from "@components/types/Types";
 import "@components/styles/global.css";
 import "@components/styles/global.css";
 import SpecificApplicationData from "./SpecificApplicationData";
 
 import Filter from "@components/atoms/Filter";
 import Loading from "@app/loading";
-import Link from "next/link";
+
 
 const MainTable = () => {
   const [data, setData] = useState<ConvertedDataProps[]>([]);

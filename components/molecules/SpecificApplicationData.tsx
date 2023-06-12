@@ -9,14 +9,11 @@ import { RawDataProps } from "@components/types/Types";
 import {
   useReactTable,
   getCoreRowModel,
-  getFilteredRowModel,
   getPaginationRowModel,
   ColumnDef,
-  OnChangeFn,
   flexRender,
-  ExpandedState,
 } from "@tanstack/react-table";
-import { useRouter } from "next/router";
+
 import Loading from "@app/loading";
 
 interface ApplicationrequestProps {
