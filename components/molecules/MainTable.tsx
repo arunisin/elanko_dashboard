@@ -40,24 +40,24 @@ const MainTable = () => {
 
   const columns = useMemo<ColumnDef<ConvertedDataProps>[]>(
     () => [
-      {
-        id: "expander",
-        header: () => null,
-        cell: ({ row }) => {
-          return row.getCanExpand() ? (
-            <button
-              {...{
-                onClick: row.getToggleExpandedHandler(),
-                style: { cursor: "pointer" },
-              }}
-            >
-              {row.getIsExpanded() ? "👇" : "👉"}
-            </button>
-          ) : (
-            "🔵"
-          );
-        },
-      },
+      // {
+      //   id: "expander",
+      //   header: () => null,
+      //   cell: ({ row }) => {
+      //     return row.getCanExpand() ? (
+      //       <button
+      //         {...{
+      //           onClick: row.getToggleExpandedHandler(),
+      //           style: { cursor: "pointer" },
+      //         }}
+      //       >
+      //         {row.getIsExpanded() ? "👇" : "👉"}
+      //       </button>
+      //     ) : (
+      //       "🔵"
+      //     );
+      //   },
+      // },
 
       {
         header: "Resource Group",

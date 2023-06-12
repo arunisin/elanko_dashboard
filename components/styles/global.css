@@ -94,14 +94,19 @@ input{
 
 
 @media (max-width: 768px) {
+
+  *{
+    font-size: 10px;
+  }
   .table-container {
     overflow-x: auto;
+    padding: 5px;
   }
 
 
   .bottom__buttons {
     flex-direction: column;
-align-items: center;
+    align-items: center;
     justify-content: center;
   }
 }
